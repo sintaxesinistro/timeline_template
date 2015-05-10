@@ -1,0 +1,154 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Arial', sans-serif;
+	background: #e9f0f5;	
+}
+
+p {
+	margin: 10px 0;
+}
+
+.container {
+	width: 940px;
+	overflow: auto;
+	margin: auto;
+}
+
+header {
+	background: #5e6482;
+	text-align: center;
+	height: 70px;
+	color: #fff;
+	padding-top: 20px;
+}
+
+footer {
+	background: #5e6482;
+	text-align: center;
+	height: 40px;
+	color: #fff;
+	padding: 10px 0;
+}
+
+#timeline {
+	background:url(../img/line.png) repeat-y 50% 0;
+	min-height: 700px;
+	margin: 20px 0;
+}
+
+.block {
+	position: relative;
+	width: 100%;
+	min-height: 100px;
+	margin-bottom: 20px;
+}
+
+.year {
+	background:url(../img/point-big.png) no-repeat 50% 0;
+	display: block;
+	width: 70px;
+	text-align: center;
+	margin: auto;
+	height: 70px;
+	margin-top: 20px;
+}
+
+.year div {
+	color:#fff;
+	font-size: 18px;
+	font-weight: bold;
+	display: block;
+	padding-top: 23px;
+	text-align: center;
+}
+
+.event {
+	background:url(../img/point-small.png) no-repeat top center;
+	margin:auto;
+	width: 100%;
+	overflow: hidden;
+	visibility: visible;
+}
+
+.event > div {
+	width: 45%;
+	position: relative;
+}
+
+.event div div {
+	background: #fff;
+	border-radius: 10px;
+	padding: 15px;
+}
+
+.event div.event-r {
+	float: right;
+	background:url(../img/arrow-left.png) no-repeat 0 0;
+}
+.event div.event-l {
+	float: left;
+	background:url(../img/arrow-right.png) no-repeat top right;
+}
+
+.event div.event-r div{
+	margin-left: 20px;
+}
+
+.event div.event-l div{
+	margin-right: 20px;
+}
+
+.event time{
+	background:#c03b44;
+	color:#fff;
+	font-size:12px;
+	padding:5px;
+	border-radius: 5px;
+}
+
+@media(max-width:768px){
+	.container {
+		width:95%;
+	}
+
+	header {
+		height: 50px;
+	}
+
+	h1 {
+		font-size: 23px;
+	}
+
+	#timeline{
+		background:url(../img/line.png) repeat-y 30px 0;
+	}
+
+	.year {
+		background:url(../img/point-big.png) no-repeat 0 0;
+		text-align: left;
+		margin: 0;
+	}
+
+	.event {
+		background:url(../img/point-small.png) no-repeat 16px 0;
+	}
+
+	.event div {
+		width: 85%;
+		position: relative;
+	}
+
+	.event div.event-l {
+		float: right;
+		background:url(../img/arrow-left.png) no-repeat 0 0;
+	}
+
+	.event div.event-l div {
+		margin-left: 20px;
+		margin-right:0;
+	}
+}
